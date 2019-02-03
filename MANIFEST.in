@@ -1,0 +1,2 @@
+include docs/wordDict.txt
+include docs/excludeWords.txt
