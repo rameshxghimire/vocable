@@ -1,7 +1,7 @@
 """
 players.py
 
-contains required classes and objects.
+contains required classes.
 
 """
 
