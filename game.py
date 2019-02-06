@@ -32,6 +32,15 @@ class Game(object):
         else:
             print("There must be at least 2 players. Adios, try some other game!")
 
+    def player_turns_decider(self, player_names):
+        self.player_turn = self.player_names[0]
+        print(f"\nIt is {self.player_turn}'s turn")
+        self.player_names.append(self.player_names[0])
+        self.player_names.remove(self.player_names[0])
+        return self.player_names
+
+
+
 # ? test the functions
 # game1 = Game()
 # game1.welcome_screen()
@@ -40,7 +49,6 @@ class Game(object):
 # print(game1.num_players)
 # game1.player_list(num_players)
 # print(game1.player_names)
-
-# TODO : turn rotating logic (see -> cycle)
-# TODO : game win, feedback etc.
-# TODO : ux enhancements
+# game1.player_turns_decider(game1.player_names)
+# print(game1.player_names)
+# ! pass, works
